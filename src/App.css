@@ -27,6 +27,22 @@ button {
   background-color: lightgreen;
 }
 p {
-  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
   color: black;
+  background-color: lightcyan;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.calculator-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin: 100px auto;
+  border: 4px solid salmon;
+  width: 300px;
+  border-radius: 8px;
 }

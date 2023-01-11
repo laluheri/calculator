@@ -17,7 +17,9 @@ const Logout = () => {
   };
   return (
     <form onSubmit={handleLogout}>
-      <button>Logout</button>
+      <button style={{ width: 240, backgroundColor: "red", color: "white" }}>
+        Logout
+      </button>
     </form>
   );
 };

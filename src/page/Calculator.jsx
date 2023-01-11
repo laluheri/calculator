@@ -43,14 +43,29 @@ function Calculator() {
 
   return (
     <div>
-      <Logout />
       <div className="calculator-body">
         <div className="result-box">
-          <input type="text" value={input} className="result-text" disabled />
-          <input type="text" value={result} className="result-text" disabled />
-        </div>
-        <div className="keyboard-box">
-          <button className="key" onClick={() => handleClick("C")}>
+          <input
+            type="text"
+            value={input}
+            className="result-text"
+            disabled
+            style={{ width: 200 }}
+          />
+          <br />
+          <input
+            type="text"
+            value={result}
+            className="result-text"
+            disabled
+            style={{ width: 200 }}
+          />
+          <br />
+          <button
+            className="key"
+            style={{ width: 110 }}
+            onClick={() => handleClick("C")}
+          >
             C
           </button>
           <button className="key" onClick={() => handleClick("CE")}>
@@ -102,12 +117,17 @@ function Calculator() {
           <button className="key" onClick={() => handleClick("0")}>
             0
           </button>
-          <button className="key" onClick={() => handleClick(".")}>
+          <button
+            className="key"
+            style={{ width: 120 }}
+            onClick={() => handleClick(".")}
+          >
             .
           </button>
           <button className="key" onClick={() => handleClick("=")}>
             =
           </button>
+          <Logout />
           <p>{terbilang(result)}</p>
         </div>
       </div>
